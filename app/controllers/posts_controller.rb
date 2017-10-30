@@ -49,7 +49,7 @@ before_action :find_post, only: [:show, :edit, :update, :destroy]
 private
 
   def post_params
-    params.require(:post).permit(:title, :content, :category_id)
+    params.require(:post).permit(:title, :content, :category_id, :image)
   end
 
   def find_post
